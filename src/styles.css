@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Golos_Text/GolosText-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Golos_Text/GolosText-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Golos_Text/GolosText-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Golos_Text/GolosText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Merriweather/Merriweather-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+  font-size: 30px;
+  background-color: tomato;
+}
