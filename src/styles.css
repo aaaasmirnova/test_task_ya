@@ -48,6 +48,29 @@
 
 body {
   font-family: "Golos Text", sans-serif;
-  font-size: 30px;
-  background-color: tomato;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 375px;
+}
+
+.main-screen__slogan {
+  font-family: "Merriweather";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 110%;
+  text-transform: uppercase;
 }
