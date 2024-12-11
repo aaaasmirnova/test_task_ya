@@ -50,6 +50,9 @@ body {
   font-family: "Golos Text", sans-serif;
   font-size: 18px;
   line-height: 130%;
+  margin: 0;
+  padding: 0;
+  color: #313131;
 }
 
 .visually-hidden {
@@ -64,13 +67,335 @@ body {
 }
 
 .container {
-  width: 375px;
+  width: 335px;
+  /*box-sizing: border-box;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-screen {
+  background-color: #E9DED4;
+  background-image: url("../images/main-screen-picture.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  min-height: 795px;
+}
+
+.main-screen__logo {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 19px;
+  width: 213px;
+}
+
+.logo__text {
+  font-family: "Golos Text", sans-serif;
+  font-size: 14.42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #595653;
+  line-height: 108%;
+  margin: 0;
+  margin-left: 5px;
 }
 
 .main-screen__slogan {
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 112%;
   text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.main-screen__text {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.main-screen__button {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  width: 335px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-radius: 66px;
+  text-align: center;
+}
+
+.main-screen__button--light {
+  color:  #1f1f1f;
+  background-color: #ffffff;
+}
+
+.tournament__text {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 135%;
+}
+
+.tournament__text-first-part {
+  position: relative;
+  margin-top: 65px;
+}
+
+.tournament__text-first-part::after {
+  content: "";
+  position: absolute;
+  top: 177px;
+  display: block;
+  width: 335px;
+  height: 212px;
+  background-image: url("../images/tournament.jpg");
+  background-size: 335px 212px;
+}
+
+.tournament__text-second-part {
+  position: relative;
+  margin-top: 262px;
+}
+
+.tournament__text-second-part::after {
+  content: "";
+  position: absolute;
+  top: 175px;
+  left: -18px;
+  display: block;
+  width: 373px;
+  height: 416px;
+  background-image: url("../images/chess-player.jpg");
+  background-size: 373px 416px;
+}
+
+.tournament__text-third-part {
+  margin-top: 461px;
+  margin-bottom: 45px;
+}
+
+.tournament__list {
+  margin-bottom: 0px;
+}
+
+.tournament__text-name {
+  font-weight: 700;
+  color: #f54932;
+}
+
+.tournament__info {
+  margin-bottom: 33px;
+}
+
+.tournament__info-payment {
+  display: flex;
+  flex-direction: row;
+}
+
+.tournament__name {
+  font-size: 20px;
+  line-height: 120%;
+  color: #313131;
+  opacity: 0.7;
+}
+
+.tournament__value {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0;
+  margin-top: 12px;
+}
+
+.tournament__value-payment {
+  margin-top: 0;
+  margin-left: 12px;
+}
+
+.tournament__value-old {
+  text-decoration: line-through;
+  text-decoration-color: #f54932;
+  margin-right: 10px;
+}
+
+.tournament__question {
+  line-height: 120%;
+  color: #3057a2;
+  margin-top: 40px;
+}
+
+/*.marquee {*/
+/*  position: relative;*/
+/*  width: 100vw;*/
+/*  max-width: 100%;*/
+/*  height: 50px;*/
+/*  overflow-x: hidden;*/
+/*}*/
+
+/*.track {*/
+/*  position: absolute;*/
+/*  white-space: nowrap;*/
+/*  will-change: transform;*/
+/*  animation: marquee 20s linear infinite;*/
+/*}*/
+
+/*@keyframes marquee {*/
+/*  from { transform: translateX(0); }*/
+/*  to { transform: translateX(-50%); }*/
+/*}*/
+
+/*.content {*/
+/*  font-family: "Merriweather", sans-serif;*/
+/*  font-size: 16px;*/
+/*  max-width: 100%;*/
+/*  padding-top: 10px;*/
+/*  padding-bottom: 10px;*/
+/*  text-transform: uppercase;*/
+/*  background-color: tomato;*/
+/*  color: #ffffff;*/
+/*}*/
+
+.stages__title {
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.stages__description {
+  margin-top: 12px;
+  line-height: 120%;
+  color: #3057a2;
+}
+
+.stages__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 335px);
+  grid-template-rows: 150px 150px;
+  column-gap: 20px;
+  height: 150px;
+  width: 335px;
+  padding: 0;
+  margin-top: 149px;
+  list-style: none;
+  counter-reset: stages 0;
+}
+
+.stages__item {
+  position: relative;
+  display: flex;
+  font-weight: 500;
+  line-height: 120%;
+  /*width: 240px;*/
+  /*height: 150px;*/
+  /*padding: 28px;*/
+  padding-left: 72px;
+  background-image: url("../images/stages-background.png");
+  background-size: 335px 300px;
+  counter-increment: stages 1;
+}
+
+.stages__item::before {
+  content: counter(stages);
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stages__item:first-child,
+.stages__item:nth-child(3n),
+.stages__item:nth-child(4){
+  padding-top: 62px;
+}
+
+.stages__item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -140px;
+  left: 10px;
+  width: 340px;
+  height: 182px;
+  background-image: url("../images/helicopter.png");
+  background-size: cover;
+}
+/*.stages__item:nth-child(2) {*/
+/*  grid-row: 2 / 3;*/
+/*  !*grid-column: 1 / 2;*!*/
+/*}*/
+
+.stages__item:nth-child(3n) {
+  grid-row: 1 / 3;
+}
+
+.stages__item:nth-child(7) {
+  padding-top: 62px;
+  grid-row: 1 / 3;
+}
+
+.stages__item:nth-child(2) {
+  padding-top: 30px;
+}
+
+.members {
+  margin-top: 336px;
+}
+
+.members__list {
+  display: flex;
+  gap: 123px;
+  list-style: none;
+  padding-left: 46px;
+}
+
+.members__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 355px;
+  /*justify-content: center;*/
+}
+
+.members__title {
+  max-width: 335px;
+  margin-bottom: 38px;
+}
+
+.title {
+  font-family: "Merriweather", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 110%;
+}
+
+.members__photo {
+  width: 244px;
+  height: 244px;
+  background-image: url("../images/member-background.jpg");
+  border-radius: 50%;
+  object-fit: none;
+  object-position: bottom;
+}
+
+.members__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+}
+
+.members__rank {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
 }

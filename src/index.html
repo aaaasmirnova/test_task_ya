@@ -6,93 +6,108 @@
   <title>Клуб четырех коней</title>
 </head>
 <body class="page__body">
-  <main class="main-container container">
-    <section class="main-screen">
+  <main class="main-container">
+    <section class="main-screen  container">
       <a class="main-screen__logo logo">
         <img class="logo__image" src="../images/logo-2.svg" width="79.5" height="27" alt="Логотип">
-        <p class="logo__text">Клуб четырех коней</p>
+        <p class="logo__text">Клуб <br> четырех коней</p>
       </a>
       <h1 class="visually-hidden">Главный блок лендинга</h1>
-      <p class="main-screen__slogan">Превратите уездный город в столицу земного шара</p>
-      <p class="main-screen__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+      <p class="main-screen__slogan">Превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в столицу &nbsp;&nbsp;&nbsp;земного шара</p>
+      <p class="main-screen__text">Оплатите взнос на телеграммы <br>для организации Международного васюкинского турнира по шахматам</p>
       <a class="main-screen__button" href=#>Поддержжать шахматную мысль</a>
-      <a class="main-screen__button button--light href=#>Подробнее о турнире</a>
+      <a class="main-screen__button main-screen__button--light" href=#>Подробнее о турнире</a>
     </section>
 
-    <section class="info-tournament">
+    <section class="tournament container">
+<!--      <div class="marquee">-->
+<!--        <div class="track">-->
+<!--          <div class="content">&nbsp;Дело помощи утопающим — дело рук самих утопающих! &middot; Шахматы двигают вперед не только культуру, но и экономику! &middot; Лед тронулся, господа присяжные заседатели! &middot;Дело помощи утопающим — дело рук самих утопающих! &middot; Шахматы двигают вперед не только культуру, но и экономику! &middot; Лед тронулся, господа присяжные заседатели! </div>-->
+<!--        </div>-->
+<!--      </div>-->
       <h2 class="visually-hidden">Информация о турнире</h2>
-      <p>Чтобы поддержать Международный васюкинский турнир</p>
-      <p>посетите лекцию на тему: «Плодотворная дебютная идея»</p>
-      <p>и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О.Бендера</p>
-      <dl class="info-tournament__list">
-        <dt class="info-tournament__name">Место проведения:</dt>
-        <dd class="info-tournament_-value">Клуб «Картонажник»</dd>
-        <dt class="info-tournament__name">Дата и время мероприятия:</dt>
-        <dd class="info-tournament_-value">22 июня 1927 г. в 18:00</dd>
-        <dt class="info-tournament__name">Стоимость входных билетов:</dt>
-        <dd class="info-tournament_-value">20 коп.</dd>
-        <dt class="info-tournament__name">Плата за игру:</dt>
-        <dd class="info-tournament_-value">50 коп.</dd>
-        <dt class="info-tournament__name">Взнос на телеграммы:</dt>
-        <dd><span>100 руб.</span>21 руб. 16 коп.</dd>
+      <p class="tournament__text tournament__text-first-part">Чтобы поддержать Международный васюкинский турнир</p>
+      <p class="tournament__text tournament__text-second-part">посетите лекцию на тему: <span class="tournament__text-name">«Плодотворная дебютная идея»</span></p>
+      <p class="tournament__text tournament__text-third-part">и сеанс <span class="tournament__text-name">одновременной игры в шахматы на 160 досках </span> гроссмейстера О.&nbsp;Бендера</p>
+      <dl class="tournament__list">
+        <div class="tournament__info">
+          <dt class="tournament__name">Место проведения:</dt>
+          <dd class="tournament__value">Клуб «Картонажник»</dd>
+        </div>
+        <div class="tournament__info">
+          <dt class="tournament__name">Дата и время мероприятия:</dt>
+          <dd class="tournament__value">22 июня 1927 г. в 18:00</dd>
+        </div>
+        <div class="tournament__info">
+          <dt class="tournament__name">Стоимость входных билетов:</dt>
+          <dd class="tournament__value">20 коп.</dd>
+        </div>
+        <div class="tournament__info tournament__info-payment">
+          <dt class="tournament__name">Плата за игру:</dt>
+          <dd class="tournament__value tournament__value-payment">50 коп.</dd>
+        </div>
+        <div class="tournament__info">
+          <dt class="tournament__name">Взнос на телеграммы:</dt>
+          <dd class="tournament__value"><span class="tournament__value-old">100 руб.</span>21 руб. 16 коп.</dd>
+        </div>
       </dl>
-      <p>По всем вопросам обращаться в администрацию к К. Михельсону</p>
+      <p class="tournament__question">По всем вопросам обращаться в&nbsp;администрацию к К. Михельсону</p>
     </section>
 
-    <section class="stages">
-      <h2 class="stages__title">Этапы преображения васюков</h2>
-      <p>Будущие источники обогащения васюкинцев</p>
-      <ol class="stages__list">
+    <section class="stages  container">
+      <h2 class="stages__title title">Этапы преображения васюков</h2>
+      <p class="stages__description">Будущие источники обогащения васюкинцев</p>
+      <ul class="stages__list">
         <li class="stages__item">Строительство железнодорожной магистрали Москва-Васюки</li>
-        <li>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
-        <li>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
-        <li>Строительство дворца для турнира</li>
-        <li>Размещение гаражей для гостевого автотранспорта</li>
-        <li>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
-        <li>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
-      </ol>
+        <li class="stages__item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
+        <li class="stages__item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
+        <li class="stages__item">Строительство дворца для турнира</li>
+        <li class="stages__item">Размещение гаражей для гостевого автотранспорта</li>
+        <li class="stages__item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
+        <li class="stages__item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
+      </ul>
     </section>
 
-    <section class="members">
-      <h2 class="members__title">Участники турнира</h2>
+    <section class="members container">
+      <h2 class="members__title title">Участники турнира</h2>
       <ul class="members__list">
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Хозе-Рауль Капабланка</p>
           <p class="members__rank">Чемпион мира по шахматам</p>
           <a class="members__link" href=#></a>
         </li>
 
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Эммануил Ласкер</p>
           <p class="members__rank">Чемпион мира по шахматам</p>
           <a class="members__link" href=#></a>
         </li>
 
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Александр Алехин</p>
           <p class="members__rank">Чемпион мира по шахматам</p>
           <a class="members__link" href=#></a>
         </li>
 
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Арон Нимцович</p>
           <p class="members__rank">Чемпион мира по шахматам</p>
           <a class="members__link" href=#></a>
         </li>
 
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Рихард Рети</p>
           <p class="members__rank">Чемпион мира по шахматам</p>
           <a class="members__link" href=#></a>
         </li>
 
         <li class="members__item">
-          <img class="members__photo" src=# alt="Фото участника">
+          <img class="members__photo" src="../images/member-photo.svg" width="244" height="244" alt="Фото участника">
           <p class="members__name">Остап Бендер</p>
           <p class="members__rank">Гроссмейстер</p>
           <a class="members__link" href=#></a>
