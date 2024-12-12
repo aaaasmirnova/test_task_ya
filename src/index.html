@@ -57,15 +57,28 @@
     <section class="stages  container">
       <h2 class="stages__title title">Этапы преображения васюков</h2>
       <p class="stages__description">Будущие источники обогащения васюкинцев</p>
-      <ul class="stages__list">
-        <li class="stages__item">Строительство железнодорожной магистрали Москва-Васюки</li>
-        <li class="stages__item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
-        <li class="stages__item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
-        <li class="stages__item">Строительство дворца для турнира</li>
-        <li class="stages__item">Размещение гаражей для гостевого автотранспорта</li>
-        <li class="stages__item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
-        <li class="stages__item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
-      </ul>
+      <div class="stages-wrapper">
+        <ul class="stages__list">
+          <li class="stages__item">Строительство железнодорожной магистрали Москва-Васюки</li>
+          <li class="stages__item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
+          <li class="stages__item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
+          <li class="stages__item">Строительство дворца для турнира</li>
+          <li class="stages__item">Размещение гаражей для гостевого автотранспорта</li>
+          <li class="stages__item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
+          <li class="stages__item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
+        </ul>
+      </div>
+      <div class="stages-slider">
+        <button class="stages-slider__button-prev stages-button"></button>
+        <div class="stages-slider__dots">
+          <button class="stages-slider__dot stages-slider__dot--active"></button>
+          <button class="stages-slider__dot"></button>
+          <button class="stages-slider__dot"></button>
+          <button class="stages-slider__dot"></button>
+          <button class="stages-slider__dot"></button>
+        </div>
+        <button class="stages-slider__button-next stages-button"></button>
+      </div>
     </section>
 
     <section class="members container">
@@ -114,13 +127,13 @@
         </li>
       </ul>
       <div class="members-slider">
-        <button class="members-slider__button-prev"></button>
+        <button class="members-slider__button-prev members-button"></button>
         <div class="members-slider__page-count">
           <span class="members-slider__page-count-current"></span>
-          <span class="members-slider__splitter">/</span>
+          <span class="members-slider__splitter">&nbsp;/&nbsp;</span>
           <span class="members-slider__page-count-total">6</span>
         </div>
-        <button class="members-slider__button-next"></button>
+        <button class="members-slider__button-next members-button"></button>
       </div>
     </section>
   </main>

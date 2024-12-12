@@ -274,16 +274,23 @@ body {
   color: #3057a2;
 }
 
+.stages-wrapper {
+  width: 335px;
+  height: 600px;
+  overflow: hidden;
+}
+
 .stages__list {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(5, 335px);
   grid-template-rows: 150px 150px;
-  column-gap: 20px;
+  column-gap: 10px;
   height: 150px;
   width: 335px;
   padding: 0;
   margin-top: 149px;
+  margin-bottom: 178px;
   list-style: none;
   counter-reset: stages 0;
 }
@@ -346,8 +353,53 @@ body {
   padding-top: 30px;
 }
 
+.stages-slider {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stages-button {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #313131;
+}
+
+.stages-slider__button-prev {
+  background-image: url("../images/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stages-slider__button-next {
+  background-image: url("../images/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.stages-slider__dots {
+  display: flex;
+  gap: 4px;
+}
+
+.stages-slider__dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.stages-slider__dot--active {
+  background-color: #313131;
+}
+
 .members {
-  margin-top: 336px;
+  margin-top: 121px;
 }
 
 .members__list {
@@ -356,6 +408,7 @@ body {
   list-style: none;
   /*padding-left: 46px;*/
   padding-left: 0;
+  margin-bottom: 27px;
 }
 
 .members__item {
@@ -424,7 +477,7 @@ body {
 }
 
 .main-footer {
-  margin-top: 200px;
+  margin-top: 137px;
   background-color: #e9ded4;
 }
 
@@ -435,3 +488,35 @@ body {
   line-height: 120%;
   opacity: 0.6;
 }
+
+.members-slider {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+}
+
+.members-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #313131;
+}
+
+.members-slider__button-prev {
+  background-image: url("../images/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.members-slider__button-next {
+  background-image: url("../images/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.members-slider__page-count {
+  margin-left: 10px;
+}
+
