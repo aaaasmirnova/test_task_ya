@@ -7,16 +7,18 @@
 </head>
 <body class="page__body">
   <main class="main-container">
-    <section class="main-screen  container">
-      <a class="main-screen__logo logo">
-        <img class="logo__image" src="../images/logo-2.svg" width="79.5" height="27" alt="Логотип">
-        <p class="logo__text">Клуб <br> четырех коней</p>
-      </a>
-      <h1 class="visually-hidden">Главный блок лендинга</h1>
-      <p class="main-screen__slogan">Превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в столицу &nbsp;&nbsp;&nbsp;земного шара</p>
-      <p class="main-screen__text">Оплатите взнос на телеграммы <br>для организации Международного васюкинского турнира по шахматам</p>
-      <a class="main-screen__button" href=#>Поддержжать шахматную мысль</a>
-      <a class="main-screen__button main-screen__button--light" href=#>Подробнее о турнире</a>
+    <section class="main-screen">
+      <div class="main-screen__wrapper container">
+        <a class="main-screen__logo logo">
+          <img class="logo__image" src="../images/logo-2.svg" width="79.5" height="27" alt="Логотип">
+          <p class="logo__text">Клуб <br> четырех коней</p>
+        </a>
+        <h1 class="visually-hidden">Главный блок лендинга</h1>
+        <p class="main-screen__slogan">Превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в столицу &nbsp;&nbsp;&nbsp;земного шара</p>
+        <p class="main-screen__text">Оплатите взнос на телеграммы <br>для организации Международного васюкинского турнира по шахматам</p>
+        <a class="main-screen__button" href=#>Поддержжать шахматную мысль</a>
+        <a class="main-screen__button main-screen__button--light" href=#>Подробнее о турнире</a>
+      </div>
     </section>
 
     <section class="tournament container">
@@ -26,32 +28,42 @@
 <!--        </div>-->
 <!--      </div>-->
       <h2 class="visually-hidden">Информация о турнире</h2>
-      <p class="tournament__text tournament__text-first-part">Чтобы поддержать Международный васюкинский турнир</p>
-      <p class="tournament__text tournament__text-second-part">посетите лекцию на тему: <span class="tournament__text-name">«Плодотворная дебютная идея»</span></p>
-      <p class="tournament__text tournament__text-third-part">и сеанс <span class="tournament__text-name">одновременной игры в шахматы на 160 досках </span> гроссмейстера О.&nbsp;Бендера</p>
-      <dl class="tournament__list">
-        <div class="tournament__info">
-          <dt class="tournament__name">Место проведения:</dt>
-          <dd class="tournament__value">Клуб «Картонажник»</dd>
+      <div class="tournament__wrapper-inside">
+        <div class="tournament__wrapper-inner">
+          <p class="tournament__text tournament__text-first-part">Чтобы поддержать Международный васюкинский турнир</p>
+          <p class="tournament__text tournament__text-second-part">посетите лекцию на тему: <span class="tournament__text-name">«Плодотворная дебютная идея»</span></p>
+          <img class="tournament__image" src="../images/tournament.jpg" width="335" height="212" alt="Турнир по шахматам.">
         </div>
-        <div class="tournament__info">
-          <dt class="tournament__name">Дата и время мероприятия:</dt>
-          <dd class="tournament__value">22 июня 1927 г. в 18:00</dd>
+      </div>
+      <div class="tournament-session__wrapper-inside">
+        <img class="tournament__image-player" src="../images/chess-player.jpg" width="377" height="420" alt="Шахматист.">
+        <div class="tournament-session__wrapper-inner">
+          <p class="tournament__text tournament__text-third-part">и сеанс <span class="tournament__text-name">одновременной игры в шахматы на 160 досках </span> гроссмейстера О.&nbsp;Бендера</p>
+          <dl class="tournament__list">
+            <div class="tournament__info">
+              <dt class="tournament__name">Место проведения:</dt>
+              <dd class="tournament__value">Клуб «Картонажник»</dd>
+            </div>
+            <div class="tournament__info">
+              <dt class="tournament__name">Дата и время мероприятия:</dt>
+              <dd class="tournament__value">22 июня 1927 г. в 18:00</dd>
+            </div>
+            <div class="tournament__info">
+              <dt class="tournament__name">Стоимость входных билетов:</dt>
+              <dd class="tournament__value">20 коп.</dd>
+            </div>
+            <div class="tournament__info tournament__info-payment">
+              <dt class="tournament__name">Плата за игру:</dt>
+              <dd class="tournament__value tournament__value-payment">50 коп.</dd>
+            </div>
+            <div class="tournament__info">
+              <dt class="tournament__name">Взнос на телеграммы:</dt>
+              <dd class="tournament__value"><span class="tournament__value-old">100 руб.</span>21 руб. 16 коп.</dd>
+            </div>
+          </dl>
+          <p class="tournament__question">По всем вопросам обращаться в&nbsp;администрацию к К. Михельсону</p>
         </div>
-        <div class="tournament__info">
-          <dt class="tournament__name">Стоимость входных билетов:</dt>
-          <dd class="tournament__value">20 коп.</dd>
-        </div>
-        <div class="tournament__info tournament__info-payment">
-          <dt class="tournament__name">Плата за игру:</dt>
-          <dd class="tournament__value tournament__value-payment">50 коп.</dd>
-        </div>
-        <div class="tournament__info">
-          <dt class="tournament__name">Взнос на телеграммы:</dt>
-          <dd class="tournament__value"><span class="tournament__value-old">100 руб.</span>21 руб. 16 коп.</dd>
-        </div>
-      </dl>
-      <p class="tournament__question">По всем вопросам обращаться в&nbsp;администрацию к К. Михельсону</p>
+      </div>
     </section>
 
     <section class="stages  container">

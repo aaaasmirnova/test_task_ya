@@ -67,12 +67,19 @@ body {
 }
 
 .container {
-  width: 335px;
-  /*box-sizing: border-box;*/
+  width: 375px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+
+    @media (min-width: 1366px) {
+      width: 1366px;
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+
 }
 
 .main-screen {
@@ -82,7 +89,21 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   min-height: 795px;
+  @media (min-width: 1366px) {
+    background-image: url("../images/main-screen-picture-desktop.jpg"), url("../images/main-screen-bg-desktop.jpg");
+    background-size: cover;
+    min-height: 700px;
+  }
+
 }
+
+/*.main-screen__wrapper {*/
+/*  width: 335px;*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  padding-left: 20px;*/
+/*  padding-right: 20px;*/
+/*}*/
 
 .main-screen__logo {
   display: flex;
@@ -137,54 +158,130 @@ body {
   background-color: #ffffff;
 }
 
+.tournament__wrapper-inside {
+  @media (min-width: 1366px) {
+    display: flex;
+    width: 764px;
+  }
+}
+
+.tournament__wrapper-inner {
+  @media (min-width: 1366px) {
+    margin-top: 168px;
+  }
+}
+
 .tournament__text {
   font-family: "Merriweather", sans-serif;
   font-weight: 400;
   font-size: 28px;
   text-transform: uppercase;
   line-height: 135%;
+
+  @media (min-width: 1366px) {
+    font-size: 36px;
+  }
 }
 
 .tournament__text-first-part {
   position: relative;
   margin-top: 65px;
+
+  @media (min-width: 1366px) {
+    margin-top: 168px;
+    display: inline;
+  }
 }
 
-.tournament__text-first-part::after {
+.tournament__image {
   content: "";
   position: absolute;
-  top: 177px;
-  display: block;
-  width: 335px;
-  height: 212px;
-  background-image: url("../images/tournament.jpg");
-  background-size: 335px 212px;
+  top: 1038px;
+
+  @media (min-width: 1366px) {
+    width: 394px;
+    height: 250px;
+    top: 840px;
+    left: 900px;
+  }
 }
+
+/*.tournament__text-first-part::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 177px;*/
+/*  display: block;*/
+/*  width: 335px;*/
+/*  height: 212px;*/
+/*  background-image: url("../images/tournament.jpg");*/
+/*  background-size: 335px 212px;*/
+
+/*  @media (min-width: 1366px) {*/
+/*    !*display: inline-block;*!*/
+/*    margin: 0;*/
+/*  }*/
+/*}*/
 
 .tournament__text-second-part {
   position: relative;
   margin-top: 262px;
+
+  @media (min-width: 1366px) {
+    margin-top: 0;
+    display: inline;
+  }
 }
 
-.tournament__text-second-part::after {
-  content: "";
-  position: absolute;
-  top: 175px;
-  left: -18px;
-  display: block;
-  width: 373px;
-  height: 416px;
-  background-image: url("../images/chess-player.jpg");
-  background-size: 373px 416px;
+.tournament__image-player {
+  margin-top: -5px;
+  margin-left: -20px;
+
+  @media (min-width: 1366px) {
+    width: 530px;
+    height: 590px;
+    margin-top: 47px;
+    margin-left: -27px;
+  }
 }
+
+/*.tournament__text-second-part::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 175px;*/
+/*  left: -18px;*/
+/*  display: block;*/
+/*  width: 373px;*/
+/*  height: 416px;*/
+/*  background-image: url("../images/chess-player.jpg");*/
+/*  background-size: 373px 416px;*/
+/*}*/
 
 .tournament__text-third-part {
-  margin-top: 461px;
+  margin-top: 14px;
   margin-bottom: 45px;
+
+  @media (min-width: 1366px) {
+    margin-top: 91px;
+    margin-left: 15px;
+    width: 670px;
+  }
+}
+
+.tournament-session__wrapper-inside {
+  display: flex;
+}
+
+.tournament-session__wrapper-inner {
+  display: flex;
+  flex-direction: column;
 }
 
 .tournament__list {
   margin-bottom: 0;
+
+  @media (min-width: 1366px) {
+    margin-left: 14px;
+  }
 }
 
 .tournament__text-name {
@@ -194,6 +291,10 @@ body {
 
 .tournament__info {
   margin-bottom: 33px;
+
+  @media (min-width: 1366px) {
+    display: flex;
+  }
 }
 
 .tournament__info-payment {
