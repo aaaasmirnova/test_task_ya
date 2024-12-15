@@ -2,7 +2,7 @@
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Golos_Text/GolosText-Regular.woff2") format("woff2");
+  src: url("./fonts/Golos_Text/GolosText-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/Golos_Text/GolosText-Medium.woff2") format("woff2");
+  src: url("./fonts/Golos_Text/GolosText-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,7 +26,7 @@
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Golos_Text/GolosText-Bold.woff2") format("woff2");
+  src: url("./fonts/Golos_Text/GolosText-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -34,7 +34,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Merriweather/Merriweather-Regular.woff2") format("woff2");
+  src: url("./fonts/Merriweather/Merriweather-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -42,7 +42,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
+  src: url("./fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -97,13 +97,13 @@ body {
 
 .main-screen {
   background-color: #E9DED4;
-  background-image: url("images/main-screen-picture.png");
+  background-image: url("./images/main-screen-picture.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 100%;
   min-height: 795px;
   @media (min-width: 1366px) {
-    background-image: url("images/main-screen-picture-desktop.jpg"), url("images/main-screen-bg-desktop.jpg");
+    background-image: url("./images/main-screen-picture-desktop.jpg"), url("images/main-screen-bg-desktop.jpg");
     background-size: cover;
     min-height: 700px;
   }
@@ -543,7 +543,7 @@ body {
   /*height: 150px;*/
   /*padding: 28px;*/
   padding-left: 72px;
-  background-image: url("images/stages-background.png");
+  background-image: url("./images/stages-background.png");
   background-size: 335px 300px;
   counter-increment: stages 1;
 
@@ -587,7 +587,7 @@ body {
   left: 10px;
   width: 340px;
   height: 182px;
-  background-image: url("images/helicopter.png");
+  background-image: url("./images/helicopter.png");
   background-size: cover;
 
   @media (min-width: 1366px) {
@@ -643,7 +643,7 @@ body {
     right: -62px;
     width: 401px;
     height: 220px;
-    background-image: url("images/helicopter.png");
+    background-image: url("./images/helicopter.png");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(3deg);
@@ -671,13 +671,13 @@ body {
 }
 
 .stages-slider__button-prev {
-  background-image: url("images/arrow-prev.svg");
+  background-image: url("./images/arrow-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .stages-slider__button-next {
-  background-image: url("images/arrow-next.svg");
+  background-image: url("./images/arrow-next.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -770,7 +770,7 @@ body {
 .members__photo {
   width: 244px;
   height: 244px;
-  background-image: url("images/member-background.jpg");
+  background-image: url("./images/member-background.jpg");
   border-radius: 50%;
   object-fit: none;
   object-position: bottom;
@@ -853,13 +853,13 @@ body {
 }
 
 .members-slider__button-prev {
-  background-image: url("images/arrow-prev.svg");
+  background-image: url("./images/arrow-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .members-slider__button-next {
-  background-image: url("images/arrow-next.svg");
+  background-image: url("./images/arrow-next.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
