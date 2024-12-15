@@ -15,13 +15,15 @@
         </a>
         <h1 class="visually-hidden">Главный блок лендинга</h1>
         <p class="main-screen__slogan">Превратите уездный город &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в столицу &nbsp;&nbsp;&nbsp;земного шара</p>
-        <p class="main-screen__text">Оплатите взнос на телеграммы <br>для организации Международного васюкинского турнира по шахматам</p>
-        <a class="main-screen__button" href=#>Поддержжать шахматную мысль</a>
-        <a class="main-screen__button main-screen__button--light" href=#>Подробнее о турнире</a>
+        <p class="main-screen__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+        <div class="main-screen__buttons-wrapper">
+          <a class="main-screen__button" href="#support">Поддержать шахматную мысль</a>
+          <a class="main-screen__button main-screen__button--light" href="#more">Подробнее <span>о турнире</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="tournament container">
+    <section class="tournament container" id="support">
 <!--      <div class="marquee">-->
 <!--        <div class="track">-->
 <!--          <div class="content">&nbsp;Дело помощи утопающим — дело рук самих утопающих! &middot; Шахматы двигают вперед не только культуру, но и экономику! &middot; Лед тронулся, господа присяжные заседатели! &middot;Дело помощи утопающим — дело рук самих утопающих! &middot; Шахматы двигают вперед не только культуру, но и экономику! &middot; Лед тронулся, господа присяжные заседатели! </div>-->
@@ -30,8 +32,10 @@
       <h2 class="visually-hidden">Информация о турнире</h2>
       <div class="tournament__wrapper-inside">
         <div class="tournament__wrapper-inner">
-          <p class="tournament__text tournament__text-first-part">Чтобы поддержать Международный васюкинский турнир</p>
-          <p class="tournament__text tournament__text-second-part">посетите лекцию на тему: <span class="tournament__text-name">«Плодотворная дебютная идея»</span></p>
+          <div class="tournament__text-wrapper">
+            <p class="tournament__text tournament__text-first-part">Чтобы поддержать Международный васюкинский турнир</p>
+            <p class="tournament__text tournament__text-second-part">посетите лекцию на тему: <span class="tournament__text-name">«Плодотворная дебютная идея»</span></p>
+          </div>
           <img class="tournament__image" src="../images/tournament.jpg" width="335" height="212" alt="Турнир по шахматам.">
         </div>
       </div>
@@ -66,7 +70,7 @@
       </div>
     </section>
 
-    <section class="stages  container">
+    <section class="stages  container" id="more">
       <h2 class="stages__title title">Этапы преображения васюков</h2>
       <p class="stages__description">Будущие источники обогащения васюкинцев</p>
       <div class="stages-wrapper">
@@ -150,8 +154,10 @@
     </section>
   </main>
 
-  <footer class="main-footer container">
-    <p class="main-footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper container">
+      <p class="main-footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+    </div>
   </footer>
   <script src="../dist/bundle.js"></script>
 </body>

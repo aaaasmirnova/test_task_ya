@@ -148,11 +148,32 @@ body {
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 24px;
+
+  @media (min-width: 1366px) {
+    font-size: 60px;
+    width: 560px;
+    margin-top: 61px;
+    line-height: 111%;
+  }
 }
 
 .main-screen__text {
   margin-top: 24px;
   margin-bottom: 30px;
+
+  @media (min-width: 1366px) {
+    width: 542px;
+    line-height: 129%;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+}
+
+.main-screen__buttons-wrapper {
+  @media (min-width: 1366px) {
+    display: flex;
+    gap: 16px;
+  }
 }
 
 .main-screen__button {
@@ -168,17 +189,44 @@ body {
   color: #ffffff;
   border-radius: 66px;
   text-align: center;
+
+  @media (min-width: 1366px) {
+    box-sizing: border-box;
+    width: 263px;
+    padding: 12px 49px 10px;
+  }
+}
+
+.main-screen__button:hover {
+  background-color: #fBce51;
+  color: #1f1f1f;
 }
 
 .main-screen__button--light {
   color:  #1f1f1f;
   background-color: #ffffff;
+
+  @media (min-width: 1366px) {
+    background-color: transparent;
+    border: 2px solid #1f1f1f;
+  }
+}
+
+.main-screen__button--light:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+
+.main-screen__button > span {
+  display: block;
 }
 
 .tournament__wrapper-inside {
   @media (min-width: 1366px) {
     display: flex;
     width: 764px;
+    position: relative;
   }
 }
 
@@ -205,6 +253,7 @@ body {
   margin-top: 65px;
 
   @media (min-width: 1366px) {
+    position: static;
     margin-top: 168px;
     display: inline;
   }
@@ -218,8 +267,8 @@ body {
   @media (min-width: 1366px) {
     width: 394px;
     height: 250px;
-    top: 840px;
-    left: 900px;
+    top: 140px;
+    left: 830px;
   }
 }
 
@@ -286,6 +335,11 @@ body {
 
 .tournament-session__wrapper-inside {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1366px) {
+    flex-direction: row;
+  }
 }
 
 .tournament-session__wrapper-inner {
@@ -741,6 +795,11 @@ body {
   text-align: center;
 }
 
+.members__link:hover {
+  background-color: #3057a2;
+  color: #ffffff;
+}
+
 .main-footer {
   margin-top: 137px;
   background-color: #e9ded4;
@@ -752,6 +811,7 @@ body {
   font-size: 16px;
   line-height: 120%;
   opacity: 0.6;
+  margin-bottom: 0;
 }
 
 .members-slider {
@@ -785,3 +845,12 @@ body {
   margin-left: 10px;
 }
 
+.stages-button:hover,
+.members-button:hover {
+  background-color: #fbce51;
+}
+
+.stages-button:disabled,
+.members-button:disabled {
+  background-color: #d6d6d6;
+}
