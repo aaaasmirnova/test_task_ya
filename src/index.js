@@ -1,22 +1,45 @@
 import './styles.css'
 
-// function addNumbers() {
-//     const num1 = parseFloat(document.getElementById("number1").value);
-//     const num2 = parseFloat(document.getElementById("number2").value);
-//     const result = num1 + num2;
-//     document.getElementById("result").innerText = `Result: ${result}`;
-// }
-//
-// document.getElementById("calculate").addEventListener("click", addNumbers);
-
 // const stagesSliderButtonPrev = document.querySelector(".stages-slider__button-prev");
 // const stagesSliderButtonNext = document.querySelector(".stages-slider__button-next");
 // const stagesList = document.querySelector(".stages__list");
 // const stagesSliderDot = document.querySelectorAll(".stages-slider__dot");
 // const stagesItems = document.querySelectorAll(".stages__item");
+// const slides = Array.from(stagesItems);
 // const slider = document.querySelector(".stages-slider");
+
+// let slideIndex = 0;
+// const slideCount = slides.length;
 //
-// let sliderCount = 0;
+// stagesSliderButtonPrev.addEventListener('click', showPreviousSlide);
+// stagesSliderButtonNext.addEventListener('click',showNextSlide);
+//
+// // Функция для показа предыдущего слайда
+// function showPreviousSlide() {
+//     slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+//     updateSlider();
+// }
+//
+// // Функция для показа следующего слайда
+// function showNextSlide() {
+//     slideIndex = (slideIndex + 1) % slideCount;
+//     updateSlider();
+// }
+//
+// // Функция для обновления отображения слайдера
+// function updateSlider() {
+//     slides.forEach((slide, index) => {
+//         if (index === slideIndex) {
+//             slide.style.display = 'block';
+//         } else {
+//             slide.style.display = 'none';
+//         }
+//     });
+// }
+//
+// // Инициализация слайдера
+// updateSlider();
+
 // let sliderWidth;
 //
 // //адаптивность слайдера
@@ -74,22 +97,45 @@ import './styles.css'
 //     })
 // })
 
-const cardContainer = document.querySelector('.members__wrapper');
-const cards = document.querySelectorAll('.members__item');
-document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0;
-    function nextCard() {
-        if (currentIndex >= cards.length - 1) {
-            currentIndex = 0;
+const buttonPrev = document.querySelector(".members-slider__button-prev");
+const buttonNext = document.querySelector(".members-slider__button-next");
+const membersList = document.querySelector(".members__list");
+const membersItems = document.querySelectorAll(".members__item");
+const slides = Array.from(membersItems);
+const slider = document.querySelector(".members-slider");
+
+let slideIndex = 0;
+const slideCount = slides.length;
+
+buttonPrev.addEventListener('click', showPreviousSlide);
+buttonNext.addEventListener('click',showNextSlide);
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+    slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+    updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+    slideIndex = (slideIndex + 1) % slideCount;
+    updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+    slides.forEach((slide, index) => {
+        if (index === slideIndex) {
+            slide.style.display = 'block';
         } else {
-            currentIndex++;
+            slide.style.display = 'none';
         }
+    });
+}
 
-        // Перемещаем карточки с помощью трансформации
-        cardContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+// Инициализация слайдера
+updateSlider();
 
-    setInterval(nextCard, 4000); // Перелистывание каждые 5 секунд
-});
+
 
 
