@@ -654,18 +654,21 @@ body {
 
 .members__wrapper {
   width: 335px;
-  height: 450px;
-  overflow: hidden;
+  height: 450px
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
 .members__list {
   display: flex;
   gap: 50px;
+  justify-content: center;
   list-style: none;
   /*padding-left: 46px;*/
   padding-left: 0;
   margin-bottom: 27px;
   transition: transform 0.5s ease-in-out;
+  overflow: hidden;
 
 
   @media (min-width: 1366px) {
@@ -674,6 +677,7 @@ body {
 }
 
 .members__item {
+  /*display: block;*/
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
